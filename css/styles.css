@@ -1,3 +1,258 @@
-body {
-    background-color: aliceblue;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    background-color: #d7b520;
+}
+
+section p {
+    font-size: 16px;
+    padding: 0 5px 10px 5px;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 98%;
+    margin: 10px 1%;
+    border-radius: 20px;
+    border: 3px solid lightgray;
+}
+
+/******* Main CSS *******/
+
+div.content {
+    background-color: #fff;
+}
+
+aside {
+    width: 28%;
+    margin: 10px 1%;
+    padding: 5px 5px;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+    background-color: #5b9bd5;
+}
+
+div.section {
+    width: 68.5%;
+    margin: 10px 0.5% 5px 0.25%;
+}
+
+aside,
+div.section {
+    float: left;
+    display: table;
+}
+
+/* Navigation CSS*/
+
+nav {
+    margin: 20px auto 30px;
+    text-transform: uppercase;
+}
+
+nav a {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    font-weight: 1200;
+}
+
+div.navigation li {
+    list-style-type: none;
+    max-width: 60%;
+    width: 100%;
+    background-color: #DBB895;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px 0;
+    margin: 5px auto;
+    text-align: center;
+}
+
+div.navigation li:hover {
+    background-color: #8F7153;
+    border-color: dimgray;
+    color: white;
+}
+
+/* Navigation CSS end*/
+
+/* Section CSS */
+
+section.first,
+section.second,
+section.third {
+    border-radius: 20px;
+    border: 3px solid lightgray;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+}
+
+section.first {
+    background-color: #fbe4d4;
+}
+
+section.second {
+    background-color: #fff2cc;
+}
+
+section.third {
+    background-color: #ddeaf6;
+}
+
+div.section:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 0 10px 10px;
+    float: right;
+}
+
+/* Section CSS end */
+
+/* Forms CSS */
+.col-1 {
+    width: 40%;
+    padding-right: 10px;
+}
+
+.col-2 {
+    width: 60%;
+}
+
+
+.col-1,
+.col-2 {
+    float: left
+}
+
+.row {
+    margin: 10px;
+    width: 95%;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+select {
+    width: 100%;
+}
+
+label {
+    font-weight: 300;
+}
+
+#fullName,
+#email,
+#phone,
+#lake-select,
+#message {
+    vertical-align: sub;
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: 900; 
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    height: 200px;
+    max-height: 500px;
+}
+
+input[type=submit] {
+    margin: 10px 20px;
+    border-radius: 5px;
+    background-color: #DBB895;
+    border: 1px solid black;
+    font-size: 1.2em;
+    float: right;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: #8F7153;
+    border-color: dimgray;
+}
+
+.small {
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+/* Form CSS end*/
+
+main:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/******** Main CSS end ********/
+
+/* Footer CSS */
+
+footer {
+    width: 98%;
+    margin: 10px 1% 0;
+    padding: 20px 1%;
+    border-radius: 20px;
+    border: 3px solid lightgray;
+    background-color: #e7e6e6;
+}
+
+footer img {
+    width: 30px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Footer CSS end */
