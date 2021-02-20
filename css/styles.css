@@ -28,6 +28,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+
 header img {
     width: 98%;
     margin: 10px 1%;
@@ -135,13 +136,20 @@ div.section:after {
     clear: both;
 }
 
-section img {
+div.section img {
     max-width: 400px;
     width: 100%;
     margin: 0 0 10px 10px;
     float: right;
+    transition: max-width 4s;
 }
 
+
+div.section img:hover {
+    max-width: 1100px;
+    width: 100%;
+    opacity: 100% !important;
+}
 /* Section CSS end */
 
 /* Forms CSS */
@@ -214,7 +222,8 @@ textarea {
 input[type=submit] {
     margin: 10px 20px 20px;
     border-radius: 5px;
-    background-color: #DBB895;
+    background-color: white;
+/*    background-color: #DBB895;*/
     border: 1px solid black;
     font-size: 1.2em;
     float: right;
@@ -222,7 +231,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
     color: white;
-    background-color: #8F7153;
+    background-color: black;
+/*    background-color: #8F7153;*/
     border-color: dimgray;
 }
 
