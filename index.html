@@ -26,89 +26,90 @@
                 </nav>
 
                 <!-- Form -->
-
-                <h2>Kérem töltse ki a <br>jelentkezési űrlapot</h2>
-                <form action="#" id="form" method="post">
-                    <div class="contain">
-                        <div class="row">
-                            <div class="col-1">
-                                <label for="fullName">Név: *</label>
+                <div class="application-form">
+                    <h2>Kérem töltse ki a <br>jelentkezési űrlapot</h2>
+                    <form action="#" id="form" method="post">
+                        <div class="contain">
+                            <div class="row">
+                                <div class="col-1">
+                                    <label for="fullName">Név: *</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="text" id="fullName" name="fullName" placeholder="Kiss Péter" maxlength="50" required>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <input type="text" id="fullName" name="fullName" placeholder="Kiss Péter" maxlength="50" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-1">
-                                <label for="email">E-mail cím: *</label>
-                            </div>
-                            <div class="col-2">
-                                <input type="email" id="email" name="email" placeholder="kisspeter@gmail.com" maxlength="50" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-1">
-                                <label for="phone">Telefonszám:</label>
-                            </div>
-                            <div class="col-2">
-                                <input type="tel" id="phone" name="phone" pattern="[+]{1}[3]{1}[6]{1}[0-9]{8,}" placeholder="+36301234567">
-                                <div class="small">Mobil pl. +36301234567</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-1">
-                               <p>Melyik tó érdekli? *</p>
-                            </div>
-                            <div class="col-2">
-                                <select name="lake" id="lake-select">
-                                    <option value="balaton">Balaton</option>
-                                    <option value="tisza-to">Tisza-tó</option>
-                                    <option value="szelidi-to">Szelidi-tó</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-1">
-                               <p>Milyen szállást keres? </p>
-                            </div>
-                            <div class="col-2" id="acc">
-                                <input type="checkbox" name="acc" value="hotel"> szálloda<br>
-                                <input type="checkbox" name="acc" value="apartment"> apartmanház<br>
-                                <input type="checkbox" name="acc" value="camping"> kemping<br>
-                                <div class="small">Több is választható</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-1">
-                               <p>Milyen ellátás legyen? </p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <label for="email">E-mail cím: *</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="email" id="email" name="email" placeholder="kisspeter@gmail.com" maxlength="50" required>
+                                </div>
                             </div>
 
-                            <div class="col-2">
-                                <input type="radio" name="service" value="full"> teljes <br>
-                                <input type="radio" name="service" value="half"> félpanzió <br>
-                                <input type="radio" name="service" value="breakfast"> csak reggeli <br>
-                                <input type="radio" name="service" value="nothing"> nem kérek ellátást <br>
+                            <div class="row">
+                                <div class="col-1">
+                                    <label for="phone">Telefonszám:</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="tel" id="phone" name="phone" pattern="[+]{1}[3]{1}[6]{1}[0-9]{8,}" placeholder="+36301234567">
+                                    <div class="small">Mobil pl. +36301234567</div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-1">
-                                <label for="message">Egyéb üzenet:</label>
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>Melyik tó érdekli? *</p>
+                                </div>
+                                <div class="col-2">
+                                    <select name="lake" id="lake-select">
+                                        <option value="balaton">Balaton</option>
+                                        <option value="tisza-to">Tisza-tó</option>
+                                        <option value="szelidi-to">Szelidi-tó</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <textarea name="message" id="message" maxlength="1000"></textarea>
-                                <div class="small"></div>
+
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>Milyen szállást keres? </p>
+                                </div>
+                                <div class="col-2" id="acc">
+                                    <input type="checkbox" name="acc" value="hotel"> szálloda<br>
+                                    <input type="checkbox" name="acc" value="apartment"> apartmanház<br>
+                                    <input type="checkbox" name="acc" value="camping"> kemping<br>
+                                    <div class="small">Több is választható</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>Milyen ellátás legyen? </p>
+                                </div>
+
+                                <div class="col-2">
+                                    <input type="radio" name="service" value="full"> teljes <br>
+                                    <input type="radio" name="service" value="half"> félpanzió <br>
+                                    <input type="radio" name="service" value="breakfast"> csak reggeli <br>
+                                    <input type="radio" name="service" value="nothing"> nem kérek ellátást <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-1">
+                                    <label for="message">Egyéb üzenet:</label>
+                                </div>
+                                <div class="col-2">
+                                    <textarea name="message" id="message" maxlength="1000"></textarea>
+                                    <div class="small"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <input type="submit" id="submit" value="Mehet">
-                    </div>
-                </form>
+                        <div class="submit">
+                            <input type="submit" name="submit" id="submit" value="Mehet">
+                        </div>
+                    </form>
+                </div>
             </aside>
 
             <!-- Section -->
