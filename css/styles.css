@@ -41,13 +41,13 @@ header {
     position: relative;
     margin: 0 1%;
     border-radius: 17px;
-/*    border: 3px solid lightgray;*/
+    /*    border: 3px solid lightgray;*/
 }
 
 header img,
 div.header-content {
     width: 100%;
-/*    position: relative;*/
+    /*    position: relative;*/
     margin: 0 auto;
     border-radius: 17px;
     border: 3px solid lightgray;
@@ -185,17 +185,8 @@ div.section img:hover {
     max-width: 600px;
     width: 100%;
     opacity: 100% !important;
-    
-}
 
-/*
-div.section:hover {
-    animation-name: szurke;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    
 }
-*/
 
 
 /* Section CSS end */
@@ -332,3 +323,61 @@ img.email:hover {
 }
 
 /* Footer CSS end */
+
+
+.flip-box {
+    background-color: transparent;
+    width: 400px;
+    height: 200px;
+    margin: 0 0 20px 10px;
+    padding-bottom: 10px;
+    /*
+max-width: 400px;
+    width: 100%;  
+    height: auto;
+*/
+    float: right;
+
+    /*  border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
