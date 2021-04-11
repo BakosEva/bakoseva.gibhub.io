@@ -1,383 +1,211 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+font-family: 'Roboto',
+sans-serif;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    width: 80% !important;
-    margin: 0 auto;
-    border: 2px solid #ddd;
-    background-color: #d7b520;
-}
-
-section p {
-    font-size: 16px;
-    padding: 0 5px 10px 5px;
-    text-align: justify;
-}
-
-h2 {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.2em;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /*
 header img {
-    position: relative;
-    width: 98%;
-    margin: 0 auto;
+    width: 100%;
 }
 */
 
-header {
-    width: 98%;
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: white !important;
+    *
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/viti.jpg") top right;
+    background-size: cover;
     position: relative;
-    margin: 0 1%;
-    border-radius: 17px;
-    /*    border: 3px solid lightgray;*/
 }
 
-header img,
-div.header-content {
-    width: 100%;
-    /*    position: relative;*/
-    margin: 0 auto;
-    border-radius: 17px;
-    border: 3px solid lightgray;
-}
-
-
-
-div.header-content {
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.65);
     position: absolute;
-    height: 100px;
     bottom: 0;
-    background-color: black;
-    opacity: 60%;
-    color: white;
-    padding: 15px;
-    border-radius: 0 0 17px 17px;
-    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-header p {
-    padding-top: 5px;
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
 }
 
-/******* Main CSS *******/
-
-div.content {
-    background-color: #fff;
-    width: 100%;
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-family: "Satisfy", serif;
+    color: #fff;
 }
 
-aside {
-    width: 28%;
-    margin: 10px 1%;
-    padding: 5px 5px;
-    border: 3px solid lightgray;
-    border-radius: 20px;
-    background-color: #5b9bd5;
-}
-
-div.section {
-    width: 68.5%;
-    margin: 10px 0.5% 5px 0.25%;
-}
-
-aside,
-div.section {
-    float: left;
-    display: table;
-}
-
-/* Navigation CSS*/
-
-nav {
-    margin: 20px auto 30px;
+#hero h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-nav a {
-    font-size: 1.2em;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
+#hero .btn-scroll {
+  transition: 0.4s;
+  color: rgba(255, 255, 255, 0.6);
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+
+#hero .btn-scroll i {
+    font-size: 48px;
+}
+
+#hero .btn-scroll:hover {
+    color: #ffb727;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/********** HERO END ************************/
+
+
+.start-link {
     display: block;
-    width: 100%;
-}
-
-nav a:visited {
-    color: black;
-}
-
-nav a:hover {
-    font-weight: 1200;
-}
-
-div.navigation li {
-    list-style-type: none;
-    max-width: 60%;
-    width: 100%;
-    background-color: #DBB895;
-    color: black;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 10px 0;
-    margin: 5px auto;
-    text-align: center;
-}
-
-div.navigation li:hover {
-    background-color: #8F7153;
-    border-color: dimgray;
-    color: white;
-}
-
-/* Navigation CSS end*/
-
-/* Section CSS */
-
-section.first,
-section.second,
-section.third {
-    border-radius: 20px;
-    border: 3px solid lightgray;
-    padding: 15px 10px;
-    margin-bottom: 10px;
-}
-
-section.first {
-    background-color: #fbe4d4;
-}
-
-section.second {
-    background-color: #fff2cc;
-}
-
-section.third {
-    background-color: #ddeaf6;
-}
-
-div.section:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-div.section img {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 0 10px 10px;
-    float: right;
-    transition: max-width 1s;
-}
-
-
-div.section img:hover {
-    max-width: 600px;
-    width: 100%;
-    opacity: 100% !important;
-
-}
-
-
-/* Section CSS end */
-
-/* Forms CSS */
-
-.application-form {
-    background-color: lightgray;
-    border-radius: 20px;
-    /*    margin-bottom: 20px;*/
-}
-
-.col-1 {
-    width: 40%;
-    padding-right: 10px;
-}
-
-.col-2 {
-    width: 60%;
-}
-
-
-.col-1,
-.col-2 {
-    float: left
-}
-
-.row {
-    margin: 10px;
-    width: 95%;
-    content: "";
-    clear: both;
-    display: table;
-}
-
-input[type=text],
-input[type=tel],
-input[type=email],
-select {
-    width: 100%;
-}
-
-label {
-    font-weight: 300;
-}
-
-#fullName,
-#email,
-#phone,
-#lake-select,
-#message {
-    vertical-align: sub;
-    padding: 8px 5px;
-    border-radius: 5px;
-    border: none;
-    font-size: 0.9em;
-}
-
-#submit {
-    padding: 10px 20px;
-    font-size: 1.1em;
-    font-weight: 900;
-}
-
-textarea {
-    width: 100%;
-    resize: vertical;
-    height: 200px;
-    max-height: 500px;
-}
-
-input[type=submit] {
-    margin: 10px 20px 20px;
-    border-radius: 5px;
-    background-color: white;
-    /*    background-color: #DBB895;*/
-    border: 1px solid black;
-    font-size: 1.2em;
-    float: right;
-}
-
-input[type=submit]:hover {
-    color: white;
-    background-color: black;
-    /*    background-color: #8F7153;*/
-    border-color: dimgray;
-}
-
-div.submit:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
-.small {
-    font-size: 0.8em;
-    padding: 10px;
-}
-
-/* Form CSS end*/
-
-main:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-/******** Main CSS end ********/
-
-/* Footer CSS */
-
-footer {
-    width: 98%;
-    margin: 10px 1% 0;
-    padding: 20px 1%;
-    border-radius: 20px;
-    border: 3px solid lightgray;
-    background-color: #e7e6e6;
-}
-
-footer img {
-    width: 30px;
-    display: block;
-    margin: 0 auto 20px;
-}
-
-footer p {
-    text-align: center;
-}
-
-img.email:hover {
-    transform: rotate(360deg);
-    transition-duration: 2s;
-}
-
-/* Footer CSS end */
-
-
-.flip-box {
-    background-color: transparent;
-    width: 400px;
-    height: 200px;
-    margin: 0 0 20px 10px;
-    padding-bottom: 10px;
-    /*
-max-width: 400px;
-    width: 100%;  
-    height: auto;
-*/
-    float: right;
-
-    /*  border: 1px solid #f1f1f1;*/
-    perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-    position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    position: relative;
+    border: 1px solid brown;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
+/*
+.start-link img,
+.felirat {
+    position: absolute;
+}
+*/
+
+.felirat {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    letter-spacing: 1px;
 }
 
-/* Position the front and back side */
-.flip-box-front,
-.flip-box-back {
+.felirat h2 {
     position: absolute;
     width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
+    bottom: 0;
+    text-align: center;
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-    background-color: #bbb;
+
+.felirat:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+
+/************** ESKÜVŐ ***************/
+
+@media only screen and (min-width: 961px) {
+    .content-in {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+/************** ESKÜVŐ VÉGE ***************/
+
+
+
+
+/************* FOOTER START *****************/
+
+.footer {
+    width: 116px;
+    margin: 0 auto;
+}
+
+.footer i {
+    padding: 10px;
     color: black;
 }
 
-/* Style the back side */
-.flip-box-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
+.footer a:visited {
+    color: black;
 }
+
+/************* FOOTER END *****************/

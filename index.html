@@ -2,207 +2,192 @@
 <html lang="hu">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Házi feladat | Tavak</title>
-    <meta name="description" content="Nyaralás, pihenés, szállás tó mellett, Balaton, Tisza-tó, Szelidi-tó">
+    <meta charset="utf-8">
+    <meta name="description" content="Gasztronómia | Vitéz Ádám - fotós">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Faviconhoz -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Faviconhoz -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+
+    <title>Gasztronómia | Vitéz Ádám Fotós</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- BS 4.6.0 -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+   
+
     <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery-3.6.0.min.js"></script>
+<!--         <script src="js/main.js"></script>-->
+        
+    <script src="js/js.js"></script>
 </head>
 
-<body>
-    <div class="content">
-        <header>
-            <!-- Header -->
-            <img src="img/header-image.jpg" alt="szörfözők" title="szörfözők">
-            <div class="header-content">
-                <h1>Pihenés a legszebb hazai tavak mellet</h1>
-                <p>Szálláshelyeink gyorsan betelnek, foglaljon szállást kedvezménnyel</p>
-            </div>
-        </header>
-        <main>
-            <aside>
-                <nav>
-                    <div class="navigation">
-                        <ul>
-                            <li><a href="#balaton">Balaton</a></li>
-                            <li><a href="#tisza-to">Tisza-tó</a></li>
-                            <li><a href="#szelidi-to">Szelidi-tó</a></li>
-                        </ul>
-                    </div>
-                </nav>
+<body style="height:2500px">
+    <!--<body>-->
 
-                <!-- Form -->
-                <div class="application-form">
-                    <h2>Kérem töltse ki a <br>jelentkezési űrlapot</h2>
-                    <form action="#" id="form" method="post">
-                        <div class="contain">
-                            <div class="row">
-                                <div class="col-1">
-                                    <label for="fullName">Név: *</label>
-                                </div>
-                                <div class="col-2">
-                                    <input type="text" id="fullName" name="fullName" placeholder="Kiss Péter" maxlength="50" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-1">
-                                    <label for="email">E-mail cím: *</label>
-                                </div>
-                                <div class="col-2">
-                                    <input type="email" id="email" name="email" placeholder="kisspeter@gmail.com" maxlength="50" required>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-1">
-                                    <label for="phone">Telefonszám:</label>
-                                </div>
-                                <div class="col-2">
-                                    <input type="tel" id="phone" name="phone" pattern="[+]{1}[3]{1}[6]{1}[0-9]{8,}" placeholder="+36301234567">
-                                    <div class="small">Mobil pl. +36301234567</div>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-1">
-                                    <p>Melyik tó érdekli? *</p>
-                                </div>
-                                <div class="col-2">
-                                    <select name="lake" id="lake-select">
-                                        <option value="balaton">Balaton</option>
-                                        <option value="tisza-to">Tisza-tó</option>
-                                        <option value="szelidi-to">Szelidi-tó</option>
-                                    </select>
-                                </div>
-                            </div>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html"><i class="fa fa-camera" style="font-size:24px"></i></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Főoldal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portré</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eskuvo.html">Esküvő</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gasztronómia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Termék</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rolam.html">Rólam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kapcsolat</a>
+                </li>
 
-                            <div class="row">
-                                <div class="col-1">
-                                    <p>Milyen szállást keres? </p>
-                                </div>
-                                <div class="col-2" id="acc">
-                                    <input type="checkbox" name="acc" value="hotel"> szálloda<br>
-                                    <input type="checkbox" name="acc" value="apartment"> apartmanház<br>
-                                    <input type="checkbox" name="acc" value="camping"> kemping<br>
-                                    <div class="small">Több is választható</div>
-                                </div>
-                            </div>
+            </ul>
+        </nav>
+    </header>
 
-                            <div class="row">
-                                <div class="col-1">
-                                    <p>Milyen ellátás legyen? </p>
-                                </div>
 
-                                <div class="col-2">
-                                    <input type="radio" name="service" value="full"> teljes <br>
-                                    <input type="radio" name="service" value="half"> félpanzió <br>
-                                    <input type="radio" name="service" value="breakfast"> csak reggeli <br>
-                                    <input type="radio" name="service" value="nothing"> nem kérek ellátást <br>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-1">
-                                    <label for="message">Egyéb üzenet:</label>
-                                </div>
-                                <div class="col-2">
-                                    <textarea name="message" id="message" maxlength="1000"></textarea>
-                                    <div class="small"></div>
-                                </div>
-                            </div>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>Vitéz Ádám</h1>
+            <h2>Fotográfus - Budapest</h2>
+            <a href="#start" class="btn-scroll scrollto" title="Görgess le"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </section><!-- End Hero -->
+
+
+    <main>
+
+        <div class="container-fluid" style="margin-top:80px">
+            <!--        <div class="container-fluid" style="mt-3">-->
+
+            <h1 id="start" class="pt-5 my-lg-5 text-center">Vitéz Ádám - fotográfus</h1>
+            <div class="row">
+                <div class="start-img col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center mt-md-4">
+                    <a class="start-link" href="#">
+                        <img src="img/analog-start.jpg" class=" img-fluid" alt="">
+                        <div class="felirat">
+                            <h2>Portré</h2>
                         </div>
-                        <div class="submit">
-                            <input type="submit" name="submit" id="submit" value="Mehet">
-                        </div>
-                    </form>
+                    </a>
                 </div>
-            </aside>
 
-            <!-- Section -->
-            <div class="section">
-                <section id="balaton" class="first">
-                    <h2>Balaton</h2>
-                    <!--
-                    
-                    <div>
-                        <img src="img/balaton.jpg" alt="Balaton" title="Balatoni panoráma">
-                    </div>
--->
-
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="img/balaton.jpg" alt="Balaton">
-                            </div>
-                            <div class="flip-box-back">
-                                <img src="img/balaton-1.jpg" alt="Balaton">
-
-                            </div>
+                <div class="start-img col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center mt-md-4">
+                    <a class="start-link" href="eskuvo.html">
+                        <img src="img/eskuvo-start.jpg" class=" img-fluid" alt="Esküvő">
+                        <div class="felirat">
+                            <h2>Esküvő</h2>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <p>A balatoni régió a fürdésnél és a horgászásnál sokkal többet kínál az idelátogató vendégek számára. A vidék az ősidők óta folyamatosan lakott, s ezért szinte minden történelmi korból találhatók itt emlékek. Várak, várromok, középkori templomromok, csodálatos kastélyok őrzik múltunkat. A környék a tihanyi bencés apátságtól, a nagyvázsonyi Kinizsi váron át,a Keszthelyen található Festetics-kastélyig sok műemléket, látnivalót kínál. Emellett figyelmet érdemelnek az épségben fennmaradt balatoni tájházak is. Az oszlopokkal és íves tornácokkal díszített népi lakóházak, a füstöskonyhás parasztházak az itt élő egyszerű, vidéki emberek életébe engednek bepillantást.</p>
-
-                    <p>A balatoni konyha évszázadok alatt kialakult étkezési szokásokat őriz. A tó közelségének köszönhetően a vidéken gyakran kerül hal az asztalra. A leghíresebb és egyben a legízletesebb halfaj a balatoni fogassüllő, melyet leggyakrabban lisztben, paprikában megforgatva, forró zsírban hirtelen kisütve tálalnak. de érdemes megkóstolni a balatoni halászlét, a vörösboros birkapörköltet, és a hévízi húsos batyut is! Szomjunkat a Kékkút határában csordogáló friss kékkúti ásványvízzel olthatjuk, de a vidék hangulatához, ízvilágához, kultúrájához elengedhetetlenül hozzátartoznak a finom borok is.</p>
-
-                    <p>A Balatonon évről évre egyre több fesztivál, rendezvény gondoskodik a kellemes időtöltésről. Szüreti fesztiválok, borhetek, borünnepek várják a borkedvelőket és a mulatozni vágyókat. Nevezetes esemény a minden év július utolsó szombatján megrendezésre kerülő balatonfüredi Anna-bál. Remek programok várják a Balaton vendégeit nyáron a Művészetek Völgye néven ismert kulturális fesztiválon. A környékbeli lovardák és lovastanyák csikós-, vagy huszárbemutatóval szórakoztatják az érdeklődőket. Nagy népszerűségnek örvendenek vitorlás- és Balaton-átúszó versenyek is.
-                    </p>
-                </section>
-                <section id="tisza-to" class="second">
-                    <h2>Tisza-tó</h2>
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="img/tisza-to.jpg" alt="Tisza-tó">
-                            </div>
-                            <div class="flip-box-back">
-                                <img src="img/tisza-to1.jpg" alt="Tisza-tó">
-
-                            </div>
+                <div class="start-img col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center mt-md-4">
+                    <a class="start-link" href="#">
+                        <img src="img/gasztro-start.jpg" class=" img-fluid" alt="">
+                        <div class="felirat">
+                            <h2>Gasztronómia</h2>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <p>Tegyen egy képzeletbeli utazást egy különleges vízivilágban, az Alföld síkságán, a hömpölygő folyó és a tó találkozásánál! Burjánzó ártéri erdők, sárgán aranyló homokpadok, holtágak, szigetek, öbölzetek, madarak ezrei köröznek a levegőben és bújnak a nádasokban…körülöttük csend és harmónia. A természet csodája a Tisza-tó.</p>
-
-                    <p>Magyarország tenyérnyi területén bejárhatja Európa különleges Világörökségét, a Tisza-tavi Madárrezervátumot, romantikus csónaktúrákat tehet, kipróbálhatja szerencséjét a legendás halbőségéről ismert Tiszán.</p>
-
-                    <p>S ha mozgalmasabb napokra vágyik jet-skí-t, motorcsónakot bérelhet kedvére, kerékpáron, lovon bebarangolhatja az apróbb falvakat, fürödhet termálfürdőkben, kóstolhat halászlevet, birkapörköltet és ellátogathat az ország cseresznyéskertjébe.</p>
-
-                    <p>A Tisza-tó a természetközeli élmények esszenciája. Ha aktív kikapcsolódásra vágyik, a Tisza-tavi Túraközpont Hálózat megszervezi kirándulását és kiszínezi üdülését. Keresse a garantált szolgáltatásokat nyújtó Vízi-Kerékpáros-Lovas és Gyalogos Túraközpontjainkat. A Túraközpontok jól működő kikötők, szálláshelyek és éttermek a Tisza-tó partján, a Hevesi Füves Pusztákon, a Borsodi Mezőségben, a Hortobágy és a Nagykunság találkozásánál és a Tisza folyó partján. Összesen 3-an, akik behálózva a régiót kínálnak speciális szolgáltatásokat a túrázók számára.</p>
-                </section>
-                <section id="szelidi-to" class="third">
-                    <h2>Szelidi-tó</h2>
-
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="img/szelidi-to.jpg" alt="Szelidi-tó">
-                            </div>
-                            <div class="flip-box-back">
-                                <img src="img/szelidi-to1.jpg" alt="Szelidi-tó">
-
-                            </div>
+                <div class="start-img col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center mt-md-4">
+                    <a class="start-link" href="#">
+                        <img src="img/termek-start.jpg" class=" img-fluid" alt="">
+                        <div class="felirat">
+                            <h2>Termék</h2>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <p>A tó déli partja igazi turisztikai központ. A magánszállásokon kívül itt több kemping és panzió várja az ide érkezőket. A beépített partszakaszon teljes hosszában strandot találunk, mely barátságos jegyárával, rendezettségével, szolgáltatásaival bárhol megállná a helyét. A parton két kölcsönzőben vízi biciklit, csónakot, szörföt is bérelhetünk, továbbá egy 400m2-es Vízi Élménypark várja a látogatókat. Közvetlenül a parton több büfé is üzemel a strandokon megszokottnak mondható kínálattal. A nyári főszezonban sem zsúfolt strandon mindenki megtalálhatja a neki megfelelő pihenési formát. A kisgyermekekkel érkezők is nyugodtan pihenhetnek, mert a víz lassan mélyül, és több helyen külön pancsolók vannak kialakítva a kicsiknek.</p>
 
-                    <p>A tavon vizibicikli, csónak, kajak, kenu, szörf kölcsönzésre van lehetőség. A tavat és környékét motiváció alapján eddig is pihenés, nyaralás, úszás, fürdőzés, aktív turizmuson belül a vízi sportok űzése, túrázás, a természeti értékek megtekintése, tanulmányozása, illetve horgászat, vadászat miatt keresték fel.</p>
-
-                    <p>Üdülési szempontból 2 területre oszthatjuk a Szelidi-tó menti területeket. Dunapatajról kiérve először az északi partra fordulhatunk le. Itt kizárólag magánházak, nyaralók találhatók. Pár évtizeddel ezelőtt ezen a partszakaszon teljesen természetes állapotok uralkodtak. Ma már elfogadható állapotú betonút vezet egészen a beépített partszakasz végéig. A parton a nyaraló tulajdonosok stégei és csónakkikötői váltogatják egymást. Kijelölt strandot itt nem találhatunk, de a helyi “íratlan szabály” szerint, ha nincs jelen a tulajdonos, a stégeket nyugodtan használhatjuk. Itt a víz hirtelen mélyül, a parttól egy lépésre már 1,8-2 méter mély. Ezt mindenképpen figyelembe kell venni, ha ezen a részen fürdőzünk. Amennyiben a területileg két részre (Húsfoka, Bodzás) osztott partszakaszon szeretnénk szállást foglalni nem lesz nehéz dolgunk, mert számos nyaraló tulajdonos adja bérbe házát a szezonban.</p>
-                </section>
             </div>
-        </main>
+            <div class="row mb-4">
+                <div class="start-img col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center mt-md-4">
+                    <a class="start-link" href="#">
+                        <img src="img/analog-start.jpg" class=" img-fluid" alt="">
+                        <div class="felirat">
+                            <h2>Kávézó</h2>
+                        </div>
+                    </a>
+                </div>
 
-        <!-- Footer -->
-        <footer>
-            <a href="mailto:info@tokerulo.com?subject=%C3%89rdekl%C3%B3d%C3%A9s"><img class="email" src="img/email.png" alt="Email küldése" title="Email küldése">
-            </a>
-            <p>&copy; Minden jog fenntartva</p>
-            <p>Tókerülő Turisztikai Iroda</p>
-        </footer>
+                <div class="start-img col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center mt-md-4">
+                    <a class="start-link" href="#">
+                        <img src="img/analog-start.jpg" class=" img-fluid" alt="">
+                        <div class="felirat">
+                            <h2>Természet</h2>
+                        </div>
+                    </a>
+                </div>
 
-    </div>
+                <div class="start-img col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center mt-md-4">
+                    <a class="start-link" href="#">
+                        <img src="img/analog-start.jpg" class=" img-fluid" alt="">
+                        <div class="felirat">
+                            <h2>Városkép</h2>
+                        </div>
+                    </a>
+                </div>
 
-</body>
 
-</html>
+                <div class="start-img col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center mt-md-4">
+                    <a class="start-link" href="#">
+                        <img src="img/analog-start.jpg" class=" img-fluid" alt="">
+                        <div class="felirat">
+                            <h2>Családi esemény</h2>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="footer">
+            <a href="mailto:vitez.adam@gmail.com?subject=%C3%89rdekl%C3%B3d%C3%A9s"><i class="fa fa-envelope" style="font-size:36px"></i></a>
+            <a href="https://www.instagram.com/vitigreen/" target="_blank"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+
+        </div>
+    </footer>
+
+</body></html>
