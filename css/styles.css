@@ -174,22 +174,23 @@ body {
 }
 
 
-/************** ESKÜVŐ ***************/
+/************** MEDIA ***************/
 
-@media only screen and (min-width: 961px) {
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .content-in {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
     .content-in {
         width: 80%;
         margin: 0 auto;
     }
 }
-
-
-
-
-
-/************** ESKÜVŐ VÉGE ***************/
-
-
 
 
 /************* FOOTER START *****************/
